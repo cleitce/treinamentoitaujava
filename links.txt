@@ -1,0 +1,74 @@
+
+BOOTSTRAP
+https://getbootstrap.com/docs/4.1/components/card/
+
+MYSQL
+https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.21.0.msi
+após instalação:
+comando: \quit
+
+GERADOR DE REGISTROS:
+https://generatedata.com/
+Preencha os campos o tipo de saida e execute (maximo 100 registros)
+
+DBDESIGNER
+http://dbdesigner.net/
+
+SPRINGBOOT
+
+JPA
+Configuração do DB/Tabela,Campos e Querys
+
+MAVEN
+Reposritorio / Gerenciador dos projetos
+
+SPRING BOOT
+Spring Initializer - Para criar um projeto padrão com as configurações iniciais
+No padrão habilitaremos a extensão do Spring para criação e não pelo Initializer
+
+
+Extensions para adicionar no VSCode:
+Sprinboot Extension Pack v0.0.8
+Live Server 5.6.1  (Emulador de Servidor)
+Peacock 3.9.1   (Coloca cor diferente no VSCODE) - Opcional
+
+Ctrl+Shift+P (Para visualizar todos os comandos)
+Search: Spring
+Abrir o Spring Initializr Create a Maven project
+Selecionar a versão do Springboot: 2.4.2
+br.silva
+spring01
+jar
+14
+extensions para adicionar no projeto: 
+	springboot dev tools
+	spring web  (para apliações MVC e Rest)
+	spring data JPA
+	mysql driver
+
+Definir a pasta para criar o projeto
+Open Project
+yes
+yes
+Exclude Workspace
+
+Obs.: se for necessário alterar a versão do java ou informações do projeto, abrir o arquivo "pom.xml"
+
+-- Criação de Database de teste para uso no Spring Boot:
+create database aula08;
+
+use aula08;
+
+CREATE TABLE IF NOT EXISTS Clientes (
+	ID int NOT NULL AUTO_INCREMENT,
+	Nome varchar(150) NOT NULL,
+	CPF char(11) NOT NULL,
+	PRIMARY KEY (ID)
+);
+
+Insert into Clientes values (null, "Emerson Paduan", "1234567890");
+Insert into Clientes values (null, "Cleiton Silva", "0987654321");
+Insert into Clientes values (null, "Manuel Assis", "0102030405");
+
+
+
